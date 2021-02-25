@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/margin_small"
+    app:cardElevation="@dimen/margin_tiny"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_tiny">
+
+        <ImageButton
+            android:id="@+id/ib_row_delete"
+            android:layout_width="@dimen/row_icons"
+            android:layout_height="@dimen/row_icons"
+            android:layout_margin="@dimen/margin_tiny"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/delete_icon"
+            android:padding="@dimen/margin_tiny"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_trash_alt"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:letterSpacing="0.2"
+            android:textAllCaps="true"
+            android:id="@+id/tv_row_department_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_tiny"
+            android:layout_marginEnd="@dimen/margin_tiny"
+            android:padding="@dimen/margin_small"
+            android:textAlignment="center"
+            android:textSize="@dimen/med_text"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ib_row_add_question"
+            app:layout_constraintStart_toEndOf="@id/ib_row_delete"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/ib_row_add_question"
+            android:layout_width="@dimen/row_icons"
+            android:layout_height="@dimen/row_icons"
+            android:layout_margin="@dimen/margin_tiny"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/delete_icon"
+            android:padding="@dimen/margin_tiny"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_plus_square"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
